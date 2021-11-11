@@ -90,6 +90,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   secToDestroy: 4
+  gameManager: {fileID: 1142236463116046584, guid: 1f3c85e5ff2e0433b82b6679fbc557f3, type: 3}
 --- !u!61 &575773406323889760
 BoxCollider2D:
   m_ObjectHideFlags: 0
