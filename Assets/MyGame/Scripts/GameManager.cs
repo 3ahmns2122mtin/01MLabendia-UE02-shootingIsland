@@ -5,20 +5,23 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-
+    private const int maxHit = 10;
     public GameObject target;
     public GameObject parentOfTargets;
     public GameObject objCounter;
+    public GameObject wonObj;
+    public GameObject shootSound;
 
     private Text textCounter;
-    public int score;
-    public bool won;
+    private int score;
+    private bool won;
 
     void Start()
     {
         textCounter = objCounter.GetComponent<Text>();
         InvokeRepeating("Spawn", 1f, 2f);
         won = false;
+        wonObj.SetActive(false);
     }
 
     //Spawn a target att a random position within a specified  x and y range.
@@ -43,6 +46,7 @@ public class GameManager : MonoBehaviour
         if (won == true)
         {
             CancelInvoke("Spawn");
+            wonObj.SetActive(true);
         }
         else
         {
@@ -52,6 +56,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Mouse pressed");
+            shootSound.GetComponent<AudioSource>().Play();
         }
     }
 
@@ -61,7 +66,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("Increment ... " + score);
         textCounter.text = score.ToString();
 
-        if(score == 10)
+        if(score == maxHit)
         {
             won = true;
         }
