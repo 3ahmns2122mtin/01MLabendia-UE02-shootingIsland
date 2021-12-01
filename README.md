@@ -25,6 +25,7 @@ Galactic Font: https://www.dafont.com/galactic-2.font
 Images:
 Galactic Background: ![Galactic background](https://user-images.githubusercontent.com/90834283/144316682-dcebb5e4-ccac-4da4-9eb6-8618ff44acb4.jpeg)
 Meteor (Photoshop bearbeitet):
+
 ![kisspng-meteor-crater-meteoroid-meteorite-outer-space-aste-meteor-5b337e1bd27941 4854539715301012758621](https://user-images.githubusercontent.com/90834283/144316870-2f20faeb-9e79-4610-a0e3-2d4af56506bf.png)
 
 
@@ -64,13 +65,8 @@ das GameObject Main Camera per Drag & Drop auf Render Camera ziehen in der Kompo
 - [x] In der Szene ein empty GameObject anlegen, umbenennen in GameManager und Reset ausführen. 
 - [x] Im Scripts Ordner ein neues C# Script erstellen mit dem Namen GameManager.
 - [x] Das GameManager Script per Drag and Drop dem GameObject GameManager hinzufügen.
-- [x] WebGL Build machen in docs Ordner von dem Projektstand 25.11 
-- [x] docs Ordner auf GitHub laden
-- [x] Eine funktionale Änderung einbauen (zusätzliches Audio, hit Bad Targets --> Decrement by 1, etc.) 
-- [x] WebGL Build machen in docs Ordner 
-- [x] docs Ordner auf GitHub laden
-- [x] Readme aktualisieren
-- [x] Projekt etwas verschönern
+
+- [x] Projekt etwas verschönern (EndSound, Extratext(Mission))
 
 
 ### Limitationen:
