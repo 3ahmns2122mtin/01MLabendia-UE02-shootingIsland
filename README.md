@@ -12,7 +12,7 @@ WebGL Referenzauflösung (960x600)
 
 
 ### Visuelle Einblicke in das Projekt: 
-![Screenshot Shooting Island](https://user-images.githubusercontent.com/90834283/144316970-637a0585-c354-4577-b5fe-2bcac907b873.png)
+![Screenshot shootingIsland](https://user-images.githubusercontent.com/90834283/144318825-4d17370b-fde2-4b1d-bfff-0982cb27648f.png)
 https://3ahmns2122mtin.github.io/02MLabendia-UE02-shootingIsland/
 
 ### Drittmaterial: 
