@@ -16,6 +16,7 @@ public class Target : MonoBehaviour
     private void OnMouseDown()
     {
         gameManager.IncrementScore();
+
         Destroy(gameObject);
     }
 

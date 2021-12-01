@@ -11,10 +11,12 @@ public class GameManager : MonoBehaviour
     public GameObject objCounter;
     public GameObject wonObj;
     public GameObject shootSound;
+    
 
     private Text textCounter;
     private int score;
     private bool won;
+    
 
     void Start()
     {
@@ -58,6 +60,10 @@ public class GameManager : MonoBehaviour
             Debug.Log("Mouse pressed");
             shootSound.GetComponent<AudioSource>().Play();
         }
+
+        
+
+        
     }
 
     public void IncrementScore()
@@ -66,9 +72,16 @@ public class GameManager : MonoBehaviour
         Debug.Log("Increment ... " + score);
         textCounter.text = score.ToString();
 
-        if(score == maxHit)
+        if (score == maxHit)
         {
             won = true;
         }
+
+       
     }
+    
+        
+        
+
+    
 }
