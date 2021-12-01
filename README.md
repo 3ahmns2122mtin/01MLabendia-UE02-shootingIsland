@@ -1,9 +1,3 @@
-UE02-shootingIsland
-
-# UE2 ShootingIsland
-
-
-
 
 # UE02 Shooting Island 
 
@@ -28,6 +22,8 @@ Font:
 Galactic Font: https://www.dafont.com/galactic-2.font
 
 Images:
+Galactic Background: ![Galactic background](https://user-images.githubusercontent.com/90834283/144316682-dcebb5e4-ccac-4da4-9eb6-8618ff44acb4.jpeg)
+
 
 
 
