@@ -11,12 +11,14 @@ public class GameManager : MonoBehaviour
     public GameObject objCounter;
     public GameObject wonObj;
     public GameObject shootSound;
-    
+    public GameObject textObj;
+    public GameObject endSound;
 
     private Text textCounter;
     private int score;
     private bool won;
-    
+    private bool disableText;
+    private bool startEndSound;
 
     void Start()
     {
@@ -61,7 +63,16 @@ public class GameManager : MonoBehaviour
             shootSound.GetComponent<AudioSource>().Play();
         }
 
-        
+        if (disableText == true)
+        {
+            CancelInvoke("Text disabled");
+            textObj.SetActive(false);
+        }
+
+        else
+        {
+            Debug.Log(disableText);
+        }
 
         
     }
@@ -77,7 +88,20 @@ public class GameManager : MonoBehaviour
             won = true;
         }
 
-       
+        if (score == maxHit)
+        {
+            disableText = true;
+        }
+
+        if (score == maxHit)
+        {
+            startEndSound = true;
+        }
+
+        if (startEndSound == true)
+        {
+            endSound.GetComponent<AudioSource>().Play();
+        }
     }
     
         
